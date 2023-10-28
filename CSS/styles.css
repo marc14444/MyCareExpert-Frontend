@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+}
+body{
+  background:#000;
+    }
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #002333;
+    width: 100%;
+    height: 80px;
+}
+.logo .mylogo{
+    font-size: 35px;
+    color: rgb(46, 163, 109);
+    margin-left: 2.5rem;
+}
+nav{
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    display: flex;
+}
+nav .nav-link{
+    color: rgb(46, 163, 109);
+    padding: 0 11px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid rgb(243, 36, 36);
+    color: rgb(243, 36, 36);
+    transition: 590ms ease-in-out all;
+}
+/*for tablets */
+@media screen and (min-width: 490px){
+    header{
+        width: 100%;
+    }
+    .logo .mylogo{
+        font-size: 38px;
+        margin-left: 9.5rem;
+    }
+    nav{
+        margin-left: 4rem;
+    }
+    nav .nav-link{
+        padding: 0 30px;
+    }
+}
+/*for pc small screen */
+@media screen and (min-width: 720px){
+    header{
+        width: 100%;
+        position: relative;
+    }
+    .logo .mylogo{
+        font-size: 30px;
+        margin-left:1rem;
+        position: relative;
+        top: 27px;
+    }
+    nav{
+        margin-right: 3rem;
+        float: right;
+        line-height: 2px;
+    }
+    nav .nav-link{
+        padding: 10px 30px;
+    }
+}
+/*for pc large screen*/
+@media screen and (min-width: 1200px){
+    header{
+        width: 100%;
+        position: relative;
+    }
+    .logo .mylogo{
+        font-size: 30px;
+        margin-left:5rem;
+        position: relative;
+        top: 29px;
+    }
+    nav{
+        margin-right: 5rem;
+        float: right;
+        margin-bottom: 35px;
+    }
+    nav .nav-link{
+        padding: 10px 0px;
+        margin: 0 40px;
+        font-size: 20px;
+    }
+}
+
+
+.partie-voiture-arierre-plan{
+    width: 100%;
+    height: 800px;
+}
+.voiture-arierre-plan{
+    width: 100%;
+    height: 800px;
+    background: white;
+    background-image: url('./../IMAGE/voiture1.jpeg');
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.case-de-choix-de-sa-maque{
+    width: 700px;
+    height: 200px;
+    background: rgba(46, 163, 109, .5);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+}
+.case-des-input{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+select{
+    width: 150px;
+    height: 50px;
+   
+}
+.mes-input{
+    width: 150px;
+    height: 50px;
+}
+.mes-input::placeholder{
+    color: #000;
+    font-size: 1rem;
+}
+.mon-bouton{
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    background: red;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* barre de nouveauter */
+
+.barre-de-nouveauter{
+    width: 100%;
+    height: 120px;
+    background-color: #002333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(46, 163, 109);
+    font-family: 'Popins',sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* la partie des articles */
+
+.les-articles{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 36px;
+    flex-wrap: wrap;
+}
+.case-de-livre {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.case-de-livre img{
+    width: 279px;
+    height: 343px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+.case-de-livre p{
+    color: #000;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+.case-de-livre button{
+    color:white;
+    font-size: 1.2rem;
+    font-family: 'Popins',sans-serif;
+    font-style: normal;
+    line-height: normal;
+    width: 139px;
+    height: 47px;
+    flex-shrink: 0;
+    background: rgba(46, 163, 109, .5);
+    border: none;
+    border-radius: 20px 0 0 0;
+}
+
+footer{
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  h2 {
+    font-weight:600;
+    font-size: 17px;
+  }
+  
+  .footer ul{
+    list-style:none;
+    padding-left:0;
+  }
+  
+  .footer li{
+    line-height:2em
+  }
+  
+  .row{
+    display: flex;
+    flex-flow:row wrap;
+  }
+  
+  .row > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  form {
+    border: 1px solid #f1f1f1;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 40%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit]{
+    background-color:red;
+    color: white;
+    border:none;
+  }
+  
+  input[type=submit]:hover{
+    opacity:0.8;
+  }
+  
+  
+  @media screen and (min-width: 600px){
+    .row > * {
+      flex:1;
+    }
+  }
+  
+  @media (max-width: 600px){
+    .footer {
+      padding: 15px;
+    }
+  }
+  
